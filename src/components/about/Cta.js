@@ -5,9 +5,9 @@ export default function Cta() {
     <div className="container">
       <div className="cta-content">
         <span>Looking for exclusive services?</span>
-        <h2>Get the best for your business</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <a href="#" className="btn btn-primary wow fadeInUp">Contact Us</a>
+        <h2>Get the best for yourself</h2>
+        <p></p>
+        <a href="#" className="btn btn-primary wow fadeInUp">Contact Me</a>
       </div>
     </div>
 

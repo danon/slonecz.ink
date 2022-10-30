@@ -1,48 +1,30 @@
 import React from 'react';
+import {paintings} from "../../paintings/paintings.js";
 
-export function FunFacts() {
+export default function FunFacts() {
+  const leftToBuy = paintings.length;
+
   return <section className="funfacts-area ptb-120 bg-38d16a">
     <div className="container">
-      <div className="row">
-        <div className="col-lg-3 col-md-3 col-sm-6">
+      <div className="row justify-content-center">
+        <div className="col-lg-3 col-md-6 col-sm-6">
           <div className="funfact">
             <h3>
-              <span className="odometer" data-count="520">520</span>
+              <span className="odometer">152</span>
             </h3>
-            <p>Awards Winning</p>
+            <p>Pictures painted</p>
           </div>
         </div>
 
-        <div className="col-lg-3 col-md-3 col-sm-6">
+        <div className="col-lg-3 col-md-6 col-sm-6">
           <div className="funfact">
             <h3>
-              <span className="odometer" data-count="99">99</span>
-              %
+              <span className="odometer">{leftToBuy}</span>
             </h3>
-            <p>Satisfied Clients</p>
-          </div>
-        </div>
-
-        <div className="col-lg-3 col-md-3 col-sm-6">
-          <div className="funfact">
-            <h3>
-              <span className="odometer" data-count="3325">3325</span>
-            </h3>
-            <p>Creative Projects</p>
-          </div>
-        </div>
-
-        <div className="col-lg-3 col-md-3 col-sm-6">
-          <div className="funfact">
-            <h3>
-              <span className="odometer" data-count="54380">54380</span>
-            </h3>
-            <p>Lines of Code</p>
+            <p>Only {leftToBuy} left to buy</p>
           </div>
         </div>
       </div>
     </div>
   </section>;
 }
-
-export default FunFacts;

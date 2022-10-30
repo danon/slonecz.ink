@@ -8,7 +8,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import {resetCart} from '../../store/actions/cartActions';
 import {success} from '../../utils/toast';
 
-function Payments({amount, resetCart, disabled}) {
+function Payments({amount, title, resetCart, disabled}) {
   let history = useHistory();
 
   const handleClick = () => {
@@ -16,7 +16,7 @@ function Payments({amount, resetCart, disabled}) {
     success('Order has been confirmed');
 
     setTimeout(function () {
-      history.push("/thankyou");
+      history.push("/paintings");
     }, 3000);
   };
 
@@ -30,7 +30,7 @@ function Payments({amount, resetCart, disabled}) {
     <div className="order-btn">
       <StripeCheckout
         name="slonecz.ink"
-        description="React Next eCommerce Templates"
+        description={title}
         amount={amount}
         currency="PLN"
         token={onToken}

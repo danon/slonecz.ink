@@ -4,7 +4,6 @@ import Navbar from '../components/layout/Navbar';
 import Footer from '../components/layout/Footer';
 import AboutMe from '../components/about/AboutMe';
 import Cta from '../components/about/Cta';
-import Skills from '../components/freelancer/Skills';
 import FunFacts from '../components/freelancer/FunFacts';
 
 export default function AboutMePage() {
@@ -25,7 +24,6 @@ export default function AboutMePage() {
     </div>
     <AboutMe/>
     <Cta/>
-    <Skills/>
     <FunFacts/>
     <Footer/>
   </>;

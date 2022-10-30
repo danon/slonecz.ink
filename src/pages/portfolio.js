@@ -9,14 +9,10 @@ export default function Portfolio() {
     <Navbar/>
     <div className="page-title-area item-bg2">
       <div className="container">
-        <h1>Our Portfolio</h1>
+        <h1>My Portfolio</h1>
         <ul>
-          <li>
-            <Link to="/">
-              Home
-            </Link>
-          </li>
-          <li>Our Portfolio</li>
+          <li><Link to="/">Home</Link></li>
+          <li>My Portfolio</li>
         </ul>
       </div>
     </div>

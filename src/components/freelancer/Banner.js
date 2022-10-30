@@ -1,6 +1,7 @@
 import React from 'react';
+import {Link} from "react-router-dom";
 
-export function Banner() {
+export default function Banner() {
   return <div className="main-banner freelancer-portfolio-home">
     <div className="d-table">
       <div className="d-table-cell">
@@ -8,47 +9,41 @@ export function Banner() {
           <div className="row h-100 align-items-center">
             <div className="col-lg-6 col-md-12">
               <div className="banner-image">
-                <img src="/images/man2.png" alt="man"/>
+                <img src="/images/homepage.picture.png" alt="man"/>
               </div>
             </div>
 
             <div className="col-lg-6 col-md-12">
               <div className="hero-content">
-                <h1>I am a <br/> Web Designer</h1>
+                <h1>I am a <br/>Painter</h1>
 
                 <ul>
                   <li>
                     <a href="#" className="facebook" target="_blank">
-                      <i className="icofont-facebook"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" className="twitter" target="_blank">
-                      <i className="icofont-twitter"></i>
+                      <i className="icofont-facebook"/>
                     </a>
                   </li>
                   <li>
                     <a href="#" className="pinterest" target="_blank">
-                      <i className="icofont-pinterest"></i>
+                      <i className="icofont-pinterest"/>
                     </a>
                   </li>
                   <li>
-                    <a href="#" className="behance" target="_blank">
-                      <i className="icofont-behance"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" className="dribbble" target="_blank">
-                      <i className="icofont-dribbble"></i>
+                    <a href="https://www.instagram.com/slonecz.ink/" className="instagram" target="_blank">
+                      <i className="icofont-instagram"/>
                     </a>
                   </li>
                 </ul>
 
-                <p>Lorem ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. eiusmod tempor incididunt ut labore et
-                  dolore magna
-                  aliqua.</p>
+                <p>
+                  Dam Ci uczucia i emocje jakich właśnie teraz potrzebujesz
+                </p>
 
-                <a href="/contact" className="btn btn-primary">Contact Me</a>
+                <span>
+                  <Link to="/about-me" className="btn btn-primary">About me</Link>
+                  &nbsp;
+                  <Link to="/paintings" className="btn btn-primary">Order a painting</Link>
+                </span>
               </div>
             </div>
           </div>
@@ -60,5 +55,3 @@ export function Banner() {
     <div className="circle-shape3"><img src="/images/shapes/circle3.png" alt="shape"/></div>
   </div>;
 }
-
-export default Banner;

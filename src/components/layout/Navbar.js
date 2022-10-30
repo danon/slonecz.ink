@@ -46,73 +46,31 @@ export class Navbar extends Component {
               <div className={classOne} id="navbarSupportedContent">
                 <ul className="navbar-nav ms-auto">
                   <li className="nav-item">
-                    <a href="#" className="nav-link">
-                      Home <i className="icofont-simple-down"/>
-                    </a>
-                    <ul className="dropdown_menu">
-                      <li className="nav-item">
-                        <Link to="/freelancer" className="nav-link">
-                          Freelancer Portfolio
-                        </Link>
-                      </li>
+                    <Link to="/portfolio" className="nav-link">
+                      Portfolio
+                    </Link>
+                  </li>
 
-                      <li className="nav-item">
-                        <Link to="/startup-agency" className="nav-link">
-                          Startup Agency
-                        </Link>
-                      </li>
-
-                      <li className="nav-item">
-                        <Link to="/agency-portfolio" className="nav-link">
-                          Agency Portfolio
-                        </Link>
-                      </li>
-                    </ul>
+                  <li className="nav-item">
+                    <Link to="/paintings" className="nav-link">
+                      Paintings
+                    </Link>
                   </li>
 
                   <li className="nav-item">
                     <a href="#" className="nav-link">
-                      Pages <i className="icofont-simple-down"/>
+                      Me <i className="icofont-simple-down"/>
                     </a>
                     <ul className="dropdown_menu">
                       <li className="nav-item">
-                        <a href="#" className="nav-link">About</a>
-                        <ul className="dropdown_menu">
-                          <li className="nav-item">
-                            <Link to="/about-us" className="nav-link">
-                              About Us
-                            </Link>
-                          </li>
-
-                          <li className="nav-item">
-                            <Link to="/about-me" className="nav-link">
-                              About Me
-                            </Link>
-                          </li>
-                        </ul>
-                      </li>
-
-                      <li className="nav-item">
-                        <Link to="/login" className="nav-link">
-                          Login
-                        </Link>
-                      </li>
-
-                      <li className="nav-item">
-                        <Link to="/coming-soon" className="nav-link">
-                          Coming Soon
-                        </Link>
-                      </li>
-
-                      <li className="nav-item">
-                        <Link to="/404" className="nav-link">
-                          404 Error
-                        </Link>
-                      </li>
-
-                      <li className="nav-item">
                         <Link to="/faq" className="nav-link">
                           FAQ
+                        </Link>
+                      </li>
+
+                      <li className="nav-item">
+                        <Link to="/about-me" className="nav-link">
+                          About Me
                         </Link>
                       </li>
 
@@ -125,78 +83,8 @@ export class Navbar extends Component {
                   </li>
 
                   <li className="nav-item">
-                    <a href="#" className="nav-link">
-                      Blog <i className="icofont-simple-down"/>
-                    </a>
-                    <ul className="dropdown_menu">
-                      <li className="nav-item">
-                        <Link to="/blog" className="nav-link">
-                          Blog
-                        </Link>
-                      </li>
-
-                      <li className="nav-item">
-                        <Link to="/blog-details" className="nav-link">
-                          Blog Details
-                        </Link>
-                      </li>
-                    </ul>
-                  </li>
-
-                  <li className="nav-item">
-                    <a href="#" className="nav-link">
-                      Portfolio <i className="icofont-simple-down"/>
-                    </a>
-                    <ul className="dropdown_menu">
-                      <li className="nav-item">
-                        <Link to="/portfolio" className="nav-link">
-                          Portfolio
-                        </Link>
-                      </li>
-
-                      <li className="nav-item">
-                        <Link to="/portfolio-details" className="nav-link">
-                          Portfolio Details
-                        </Link>
-                      </li>
-                    </ul>
-                  </li>
-
-                  <li className="nav-item">
-                    <a href="#" className="nav-link">
-                      Portfolio <i className="icofont-simple-down"/>
-                    </a>
-
-                    <ul className="dropdown_menu">
-                      <li className="nav-item">
-                        <Link to="/products" className="nav-link">
-                          Products
-                        </Link>
-                      </li>
-
-                      <li className="nav-item">
-                        <Link to="/product-details" className="nav-link">
-                          Products Details
-                        </Link>
-                      </li>
-
-                      <li className="nav-item">
-                        <Link to="/cart" className="nav-link">
-                          Cart
-                        </Link>
-                      </li>
-
-                      <li className="nav-item">
-                        <Link to="/checkout" className="nav-link">
-                          Checkout
-                        </Link>
-                      </li>
-                    </ul>
-                  </li>
-
-                  <li className="nav-item">
-                    <Link to="/contact" className="nav-link">
-                      Contact
+                    <Link to="/checkout" className="nav-link">
+                      Checkout
                     </Link>
                   </li>
                 </ul>

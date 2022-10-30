@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import {Link} from 'react-router-dom';
 import Lightbox from 'react-image-lightbox';
 import 'react-image-lightbox/style.css';
 import workImage1 from "../../images/work-image/1.jpg";
@@ -30,11 +29,9 @@ export class PortfolioContent extends Component {
                 <img src={workImage1} alt="image"/>
 
                 <div className="works-content">
-                  <h3><a href="#">Digital Marketing</a></h3>
+                  <h3><a href="#">Abstrakcja</a></h3>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </div>
-
-                <a href="#" className="link-btn"><i className="icofont-external-link"/></a>
 
                 <a
                   href="#"
@@ -46,7 +43,6 @@ export class PortfolioContent extends Component {
                 >
                   <i className="icofont-expand"/>
                 </a>
-
               </div>
             </div>
 
@@ -55,11 +51,8 @@ export class PortfolioContent extends Component {
                 <img src="/images/work-image/6.jpg" alt="image"/>
 
                 <div className="works-content">
-                  <h3><a href="#">Digital Marketing</a></h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  <h3><a href="#">Viserion</a></h3>
                 </div>
-
-                <a href="#" className="link-btn"><i className="icofont-external-link"/></a>
 
                 <a
                   href="#"
@@ -80,11 +73,8 @@ export class PortfolioContent extends Component {
                 <img src="/images/work-image/21.jpg" alt="image"/>
 
                 <div className="works-content">
-                  <h3><a href="#">Digital Marketing</a></h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  <h3><a href="#">Zorza polarna</a></h3>
                 </div>
-
-                <a href="#" className="link-btn"><i className="icofont-external-link"/></a>
 
                 <a
                   href="#"
@@ -122,11 +112,8 @@ export class PortfolioContent extends Component {
                 <img src="/images/work-image/20.jpg" alt="image"/>
 
                 <div className="works-content">
-                  <h3><a href="#">Digital Marketing</a></h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  <h3><a href="#">Meduza</a></h3>
                 </div>
-
-                <a href="#" className="link-btn"><i className="icofont-external-link"></i></a>
 
                 <a
                   href="#"
@@ -146,11 +133,8 @@ export class PortfolioContent extends Component {
                 <img src="/images/work-image/19.jpg" alt="image"/>
 
                 <div className="works-content">
-                  <h3><a href="#">Digital Marketing</a></h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  <h3><a href="#">Monroe</a></h3>
                 </div>
-
-                <a href="#" className="link-btn"><i className="icofont-external-link"></i></a>
 
                 <a
                   href="#"
@@ -171,11 +155,8 @@ export class PortfolioContent extends Component {
                 <img src="/images/work-image/18.jpg" alt="image"/>
 
                 <div className="works-content">
-                  <h3><a href="#">Digital Marketing</a></h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  <h3><a href="#">Za niedługo lato</a></h3>
                 </div>
-
-                <a href="#" className="link-btn"><i className="icofont-external-link"/></a>
 
                 <a
                   href="#"
@@ -187,20 +168,6 @@ export class PortfolioContent extends Component {
                 >
                   <i className="icofont-expand"/>
                 </a>
-              </div>
-            </div>
-
-            <div className="col-lg-12 col-md-12">
-              <div className="pagination-area">
-                <nav aria-label="Page navigation">
-                  <ul className="pagination justify-content-center">
-                    <li className="page-item"><a className="page-link" href="#"><i className="icofont-double-left"/></a></li>
-                    <li className="page-item active"><a className="page-link" href="#">1</a></li>
-                    <li className="page-item"><a className="page-link" href="#">2</a></li>
-                    <li className="page-item"><a className="page-link" href="#">3</a></li>
-                    <li className="page-item"><a className="page-link" href="#"><i className="icofont-double-right"/></a></li>
-                  </ul>
-                </nav>
               </div>
             </div>
           </div>

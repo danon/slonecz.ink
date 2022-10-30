@@ -27,7 +27,7 @@ export class OrderSummary extends Component {
                 </td>
 
                 <td className="product-total">
-                  <span className="subtotal-amount">${data.price}</span>
+                  <span className="subtotal-amount">{data.price}zł</span>
                 </td>
               </tr>
             ))}
@@ -38,7 +38,7 @@ export class OrderSummary extends Component {
               </td>
 
               <td className="order-subtotal-price">
-                <span className="order-subtotal-amount">${this.props.total}</span>
+                <span className="order-subtotal-amount">{this.props.total}zł</span>
               </td>
             </tr>
 
@@ -48,7 +48,7 @@ export class OrderSummary extends Component {
               </td>
 
               <td className="shipping-price">
-                <span>${this.props.shipping}</span>
+                <span>{this.props.shipping}zł</span>
               </td>
             </tr>
             <tr>
@@ -57,14 +57,14 @@ export class OrderSummary extends Component {
               </td>
 
               <td className="product-subtotal">
-                <span className="subtotal-amount">${this.props.total}</span>
+                <span className="subtotal-amount">{this.props.total}zł</span>
               </td>
             </tr>
             </tbody>
           </table>
         </div>
 
-        <Payment amount={totalAmount * 100} disabled={disabled}/>
+        <Payment amount={totalAmount * 100} title={"title"} disabled={disabled}/>
       </div>
     </div>;
   }

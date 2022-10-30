@@ -9,14 +9,14 @@ export default function Contact() {
 
     <div className="page-title-area item-bg1">
       <div className="container">
-        <h1>Contact Us</h1>
+        <h1>Contact Me</h1>
         <ul>
           <li>
             <Link to="/">
               <a>Home</a>
             </Link>
           </li>
-          <li>Contact Us</li>
+          <li>Contact Me</li>
         </ul>
       </div>
     </div>
@@ -30,8 +30,7 @@ export default function Contact() {
                 <i className="icofont-email"/>
               </div>
               <h3>Mail Here</h3>
-              <p><a href="#">admin@artflex.com</a></p>
-              <p><a href="#">info@artflex.com</a></p>
+              <p><a href="#">pelagia.kozielska@gmail.com</a></p>
             </div>
           </div>
 
@@ -40,19 +39,18 @@ export default function Contact() {
               <div className="icon">
                 <i className="icofont-google-map"/>
               </div>
-              <h3>Visit Here</h3>
-              <p>1660 Travis Street Miramar, <br/> FL 33025, California</p>
+              <h3>Pick up in person</h3>
+              <p>Kraków, Poland</p>
             </div>
           </div>
 
           <div className="col-lg-4 col-md-6 offset-lg-0 offset-md-3">
             <div className="contact-info-box">
               <div className="icon">
-                <i className="icofont-phone"></i>
+                <i className="icofont-phone"/>
               </div>
-              <h3>Call Here</h3>
-              <p><a href="#">+123 456 7890</a></p>
-              <p><a href="#">+241 452 4526</a></p>
+              <h3>Get in touch</h3>
+              <p>Leave your phone number</p>
             </div>
           </div>
         </div>
@@ -62,8 +60,8 @@ export default function Contact() {
     <section className="contact-area ptb-120">
       <div className="container">
         <div className="section-title">
-          <span>Contact Us</span>
-          <h2>Get In Touch With Us</h2>
+          <span>Contact me</span>
+          <h2>Get in touch with me</h2>
         </div>
 
         <div className="row h-100 justify-content-center align-items-center">
@@ -76,25 +74,7 @@ export default function Contact() {
               <div className="row">
                 <div className="col-lg-12 col-md-12">
                   <div className="form-group">
-                    <input type="text" className="form-control" required={true} placeholder="Name"/>
-                  </div>
-                </div>
-
-                <div className="col-lg-12 col-md-12">
-                  <div className="form-group">
                     <input type="email" className="form-control" required={true} placeholder="Email"/>
-                  </div>
-                </div>
-
-                <div className="col-lg-12 col-md-6">
-                  <div className="form-group">
-                    <input type="text" className="form-control" placeholder="Phone"/>
-                  </div>
-                </div>
-
-                <div className="col-lg-12 col-md-6">
-                  <div className="form-group">
-                    <input type="text" className="form-control" placeholder="Subject"/>
                   </div>
                 </div>
 

@@ -1,6 +1,4 @@
 /*
-@File: Fleja Template Styles
-
 * This file contains the styling for the actual tepmlate, this
 is the file you need to edit to change the look of the
 tepmlate.
@@ -27,26 +25,18 @@ This files table contents are outlined below>>>>>
 ** - Team CSS
 ** - CTA CSS
 ** - Features CSS
-** - Our Skill CSS
-** - Blog CSS
-** - Our Partner CSS
 ** - Contact CTA CSS
 ** - Page Title CSS
 ** - Pagination CSS
 ** - Sidebar CSS
-** - Blog Details CSS
 ** - Product Details CSS
 ** - Cart CSS
 ** - Checkout CSS
 ** - Contact CSS
 ** - Team Details CSS
-** - Login CSS
-** - Signup CSS
 ** - FAQ CSS
-** - Coming Soon CSS
 ** - 404 Error CSS
 ** - Footer CSS
-** - Go Top CSS
 */
 
 /*================================================
@@ -1037,8 +1027,8 @@ Navbar CSS
       background: $template-color;
       font-size: 25px;
       color: $white-color;
-      margin: 0px;
-      padding: 0px;
+      margin: 0;
+      padding: 0;
       cursor: pointer;
       transition: $transition;
       border: none;
@@ -1068,6 +1058,12 @@ Navbar CSS
   }
 }
 
+.navbar-brand {
+  img {
+    height: 60px;
+  }
+}
+
 /*================================================
 Main Banner CSS
 =================================================*/
@@ -1076,13 +1072,6 @@ Main Banner CSS
   position: relative;
   z-index: 1;
   height: 810px;
-}
-
-.digital-agency-banner {
-  background-image: url('../images/banner-bg.jpg');
-  background-position: center center;
-  background-size: cover;
-  position: relative;
 }
 
 .w-150 {
@@ -1136,36 +1125,6 @@ Main Banner CSS
           }
         }
 
-        &.twitter {
-          border-color: #38A1F3;
-          color: #38A1F3;
-
-          &:hover {
-            background: #38A1F3;
-            border-color: #38A1F3;
-          }
-        }
-
-        &.behance {
-          border-color: #053eff;
-          color: #053eff;
-
-          &:hover {
-            background: #053eff;
-            border-color: #053eff;
-          }
-        }
-
-        &.dribbble {
-          border-color: #ea4c89;
-          color: #ea4c89;
-
-          &:hover {
-            background: #ea4c89;
-            border-color: #ea4c89;
-          }
-        }
-
         &.pinterest {
           border-color: #c8232c;
           color: #c8232c;
@@ -1173,6 +1132,16 @@ Main Banner CSS
           &:hover {
             background: #c8232c;
             border-color: #c8232c;
+          }
+        }
+
+        &.instagram {
+          border-color: #e101c4;
+          color: #e101c4;
+
+          &:hover {
+            background: #fc0174;
+            border-color: #fc0174;
           }
         }
 
@@ -1306,45 +1275,6 @@ Main Banner CSS
   }
 }
 
-.startup-agency-home {
-  .main-banner {
-    &::before {
-      content: '';
-      position: absolute;
-      left: 0;
-      top: 0;
-      background: $white-color;
-      width: 100%;
-      height: 100%;
-      opacity: .88;
-      z-index: -1;
-    }
-
-    &::after {
-      position: absolute;
-      z-index: -2;
-      content: '';
-      width: 100%;
-      height: 100%;
-      background-image: url(../images/dot.png);
-      left: 0;
-      top: 0;
-    }
-
-    .hero-content {
-      position: relative;
-      margin: {
-        left: -115px;
-        top: 0;
-      }
-
-      h1 {
-        margin-bottom: 35px;
-      }
-    }
-  }
-}
-
 .freelancer-portfolio-home {
   .banner-image {
     text-align: left;
@@ -1388,26 +1318,6 @@ Main Banner CSS
 
   .shape9 {
     left: 54%;
-  }
-}
-
-.agency-portfolio-home {
-  .main-banner {
-    height: 100%;
-    padding: {
-      top: 250px;
-      bottom: 190px;
-    }
-
-    .hero-content {
-      text-align: center;
-      max-width: 720px;
-      margin: 0 auto;
-
-      h1 {
-        font-size: 75px;
-      }
-    }
   }
 }
 
@@ -1761,157 +1671,6 @@ About CSS
       margin: 0;
     }
   }
-}
-
-.cta-about {
-  overflow: hidden;
-  position: relative;
-  z-index: 1;
-  background-color: $white-color;
-}
-
-.cta-about-image {
-  background: {
-    image: url(../images/cta-about.jpg);
-    position: center center;
-    size: cover;
-    repeat: no-repeat;
-  }
-  width: 100%;
-  height: 100%;
-
-  img {
-    display: none;
-  }
-}
-
-.cta-about-content {
-  max-width: 700px;
-  margin-left: 15px;
-
-  .section-title {
-    margin-bottom: 20px;
-    text-align: left;
-
-    h2 {
-      margin: {
-        left: 0;
-      }
-    }
-  }
-
-  .btn {
-    margin-top: 15px;
-  }
-}
-
-/*================================================
-Why Choose Us CSS
-=================================================*/
-.why-choose-us-area {
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
-
-  .align-items-center {
-    &:hover {
-      .why-choose-us-img {
-        .front-img {
-          top: 15px;
-        }
-
-        .back-img {
-          left: 30px;
-        }
-      }
-    }
-  }
-
-}
-
-.why-choose-us-img {
-  margin-bottom: 35px;
-  position: relative;
-
-  .front-img {
-    position: relative;
-    z-index: 1;
-    top: 35px;
-    left: 35px;
-    transition: $transition;
-  }
-
-  .back-img {
-    position: absolute;
-    left: 15px;
-    top: 0;
-    transition: $transition;
-  }
-}
-
-.why-choose-us-content {
-  .section-title {
-    margin-bottom: 20px;
-    text-align: left;
-
-    h2 {
-      margin: {
-        left: 0;
-      }
-    }
-  }
-
-  .btn {
-    margin-top: 20px;
-  }
-}
-
-.why-choose-inner-area {
-  margin-top: 100px;
-
-  .section-title {
-    h2 {
-      text-transform: initial;
-      max-width: 660px;
-    }
-  }
-
-  .single-box {
-    text-align: center;
-    background: $white-color;
-    box-shadow: 0 -2px 20px 0 rgba(0, 0, 0, 0.06);
-    padding: 25px;
-    transition: $transition;
-
-    .icon {
-      font-size: 40px;
-      color: $template-color;
-      transition: $transition;
-    }
-
-    h3 {
-      font-size: 22px;
-      margin: {
-        top: 15px;
-        bottom: 15px;
-      }
-    }
-
-    &:hover {
-      transform: translateY(-7px);
-
-      .icon {
-        color: $pink-color;
-      }
-    }
-  }
-}
-
-.circle-dot {
-  position: absolute;
-  top: -380px;
-  left: -45px;
-  z-index: -1;
 }
 
 /*================================================
@@ -2285,324 +2044,6 @@ Portfolio CSS
 }
 
 /*================================================
-How We Works CSS
-=================================================*/
-.how-we-work {
-  position: relative;
-  z-index: 1;
-}
-
-.single-work-box {
-  position: relative;
-  box-shadow: 0 -2px 20px 0 rgba(0, 0, 0, 0.06);
-  background: $white-color;
-  padding: 25px;
-  border-radius: 5px;
-  transition: $transition;
-  z-index: 1;
-
-  h3 {
-    font-size: 22px;
-    margin: {
-      bottom: 10px;
-      top: 25px;
-    }
-    transition: $transition;
-  }
-
-  p {
-    transition: $transition;
-    margin: 0;
-  }
-
-  .number {
-    width: 48px;
-    height: 48px;
-    line-height: 48px;
-    text-align: center;
-    background: $black-color;
-    color: $white-color;
-    font: {
-      size: 16px;
-      weight: 600;
-    }
-    border-radius: 50%;
-    transition: $transition;
-  }
-
-  i {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    font-size: 145px;
-    color: #eeeeee;
-    z-index: -1;
-    transition: $transition;
-    opacity: .5;
-  }
-
-  &:hover {
-    background: $template-color;
-    transform: translateY(-5px);
-
-    i {
-      font-size: 130px;
-      opacity: .1;
-    }
-
-    h3, p {
-      color: $white-color;
-    }
-
-    .number {
-      background: $pink-color;
-    }
-  }
-}
-
-/*================================================
-Team CSS
-=================================================*/
-.team-area {
-  position: relative;
-  z-index: 1;
-  padding-bottom: 90px;
-  overflow: hidden;
-
-  &.bg-image {
-    background: {
-      image: url(../images/bg-shape.jpg);
-      attachment: fixed;
-      repeat: no-repeat;
-      position: center center;
-      size: cover;
-    }
-  }
-}
-
-.single-team {
-  margin-bottom: 30px;
-
-  .team-image {
-    z-index: 1;
-    position: relative;
-    margin-right: 10px;
-
-    .member-img {
-      position: relative;
-      top: 10px;
-      left: 10px;
-      transition: $transition;
-      width: 100%;
-    }
-
-    .back-image {
-      position: absolute;
-      left: 0;
-      top: 0;
-      z-index: -1;
-    }
-
-    .social-links {
-      position: absolute;
-      right: 20px;
-      bottom: 0;
-      list-style-type: none;
-      padding: 0;
-      margin: 0;
-      opacity: 0;
-      visibility: hidden;
-      transition: $transition;
-
-      li {
-        display: block;
-        margin-bottom: 5px;
-
-        a {
-          width: 35px;
-          height: 35px;
-          text-align: center;
-          line-height: 35px;
-          border: 1px solid $white-color;
-          border-radius: 50%;
-          background: $white-color;
-
-          &:hover {
-            background: $template-color;
-            border-color: $template-color;
-            color: $white-color;
-          }
-        }
-
-        &:last-child {
-          margin-bottom: 0;
-        }
-      }
-    }
-  }
-
-  .team-content {
-    margin-top: 40px;
-
-    h3 {
-      font-size: 22px;
-      margin-bottom: 9px;
-    }
-
-    span {
-      display: block;
-      text-transform: uppercase;
-      font-size: 14px;
-      color: $paragraph-color;
-    }
-  }
-
-  &:hover {
-    .team-image {
-      .social-links {
-        opacity: 1;
-        visibility: visible;
-        right: 0;
-      }
-    }
-  }
-}
-
-.single-team-box {
-  margin-bottom: 30px;
-  text-align: center;
-  transition: $transition;
-  box-shadow: 0 15px 20px 0 rgba(0, 0, 0, 0.06);
-
-  .team-content {
-    background: $white-color;
-    padding: 30px 0;
-    position: relative;
-    transition: $transition;
-
-    &::before {
-      content: '';
-      width: 0;
-      height: 20px;
-      color: $white-color;
-      background: $template-color;
-      position: absolute;
-      top: -20px;
-      right: 0;
-      transition: $transition;
-    }
-
-    h3 {
-      font-size: 22px;
-      margin-bottom: 12px;
-      transition: $transition;
-    }
-
-    span {
-      display: block;
-      font-size: 14px;
-      text-transform: uppercase;
-      transition: $transition;
-    }
-
-    .social {
-      padding: 0;
-      margin: 0;
-      list-style-type: none;
-      position: absolute;
-      top: -37px;
-      left: 0;
-      right: 0;
-      margin: 0 auto;
-      transform: scale(0);
-      transition: $transition;
-
-      li {
-        display: inline-block;
-
-        a {
-          display: block;
-          width: 35px;
-          height: 35px;
-          line-height: 35px;
-          font-size: 16px;
-          color: #a0a0a0;
-          margin-right: 10px;
-          position: relative;
-          z-index: 1;
-
-          &:hover {
-            color: $white-color;
-
-            &::before {
-              background: $pink-color;
-              color: $white-color;
-              transform: rotate(-45deg);
-            }
-          }
-
-          &::before {
-            content: '';
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            top: 0;
-            left: 0;
-            background: $white-color;
-            transform: rotate(45deg);
-            z-index: -1;
-            transition: $transition;
-          }
-        }
-      }
-    }
-  }
-
-  &:hover {
-    box-shadow: 0 0 28px 0 rgba(6, 74, 255, 0.22);
-
-    &::before, &::after {
-      border-color: $template-color;
-      transform: scale(1);
-    }
-
-    .team-content {
-      background: $template-color;
-
-      &::before {
-        width: 100%;
-      }
-
-      .social {
-        transform: scale(1);
-      }
-
-      h3, span {
-        color: $white-color;
-      }
-    }
-  }
-}
-
-@keyframes colorchange {
-  0% {
-    background: $template-color;
-  }
-  25% {
-    background: red;
-  }
-  50% {
-    background: blue;
-  }
-  75% {
-    background: $black-color;
-  }
-  0% {
-    background: $pink-color;
-  }
-}
-
-/*================================================
 CTA CSS
 =================================================*/
 .cta-area {
@@ -2677,197 +2118,7 @@ CTA CSS
   width: 80px;
 }
 
-/*================================================
-Features CSS
-=================================================*/
-.features-area {
-  position: relative;
-  z-index: 1;
 
-  .shape7 {
-    top: auto;
-    right: 20%;
-    bottom: 35px;
-    width: 35px;
-  }
-}
-
-.features-content {
-  .section-title {
-    text-align: left;
-
-    h2 {
-      color: $white-color;
-      margin: {
-        left: 0;
-      }
-    }
-  }
-
-  .single-features-item {
-    position: relative;
-    padding-left: 50px;
-    margin-bottom: 30px;
-
-    &:last-child {
-      margin-bottom: 0;
-    }
-
-    .icon {
-      font-size: 35px;
-      color: $template-color;
-      position: absolute;
-      left: 0;
-      top: -8px;
-    }
-
-    h3 {
-      font-size: 18px;
-      margin-bottom: 15px;
-      color: $white-color;
-    }
-
-    p {
-      color: $white-color;
-    }
-  }
-}
-
-.features-boxes-area {
-  overflow: hidden;
-  position: relative;
-  z-index: 1;
-
-  .single-box {
-    position: relative;
-    padding-left: 75px;
-
-    span {
-      font-size: 40px;
-      position: absolute;
-      left: 0;
-      color: $template-color;
-      top: 0;
-      font-weight: 600;
-      line-height: 1;
-    }
-
-    h3 {
-      font-size: 22px;
-      color: $white-color;
-      margin-bottom: 15px;
-    }
-
-    p {
-      color: #9c9ca4;
-    }
-  }
-}
-
-/*================================================
-Our Skill CSS
-=================================================*/
-.our-skill {
-  .section-title {
-    text-align: left;
-
-    h2 {
-      margin-left: 0;
-    }
-  }
-
-  p {
-    margin-top: 10px;
-  }
-
-  .skills {
-    position: relative;
-
-    .skill-item {
-      position: relative;
-      margin-bottom: 25px;
-
-      .skill-header {
-        position: relative;
-        margin-bottom: 10px;
-
-        .skill-title {
-          font-size: 17px;
-          margin-bottom: 0;
-        }
-
-        .skill-percentage {
-          position: absolute;
-          right: 0;
-          top: 4px;
-          font: {
-            size: 16px;
-            weight: 300;
-            family: $font-family;
-          }
-          color: $paragraph-color;
-        }
-      }
-
-      &:last-child {
-        margin-bottom: 0;
-      }
-    }
-  }
-}
-
-.skill-bar {
-  position: relative;
-  width: 100%;
-
-  .progress {
-    height: 7px;
-    background-color: #d5d5d5;
-
-    .progress-bar {
-      background-color: $template-color;
-    }
-  }
-}
-
-.my-skill-area {
-  position: relative;
-  z-index: 1;
-}
-
-.skill-content {
-  h3 {
-    font-size: 22px;
-    margin-bottom: 15px;
-  }
-
-  p {
-    margin-bottom: 15px;
-  }
-
-  .btn {
-    margin-top: 10px;
-  }
-}
-
-.skill-image {
-  position: relative;
-  z-index: 1;
-  text-align: right;
-
-  .back-image {
-    position: absolute;
-    right: -30px;
-    z-index: -1;
-    top: 10%;
-    animation: movebounce 3s linear infinite;
-  }
-
-  img.man-image {
-    max-width: 435px;
-    width: 100%;
-  }
-}
 
 /*================================================
 Fun Facts CSS
@@ -2898,162 +2149,6 @@ Fun Facts CSS
   }
 }
 
-/*================================================
-Blog CSS
-=================================================*/
-.blog-area {
-  padding-bottom: 90px;
-
-  .pagination-area {
-    margin-bottom: 30px;
-  }
-}
-
-.single-blog-post {
-  margin-bottom: 30px;
-  box-shadow: 0 15px 20px 0 rgba(0, 0, 0, 0.06);
-
-  .blog-image {
-    position: relative;
-    overflow: hidden;
-
-    a {
-      display: block;
-
-      img {
-        transition: .9s;
-      }
-    }
-
-    .post-tag {
-      position: absolute;
-      right: 0;
-      top: 60px;
-      transition: $transition;
-
-      a {
-        background: $template-color;
-        color: $white-color;
-        padding: 9px 28px;
-      }
-    }
-  }
-
-  .blog-post-content {
-    padding: 25px;
-
-    .date {
-      color: $paragraph-color;
-      display: block;
-      text-transform: uppercase;
-      font-size: 14px;
-    }
-
-    h3 {
-      margin: {
-        top: 13px;
-        bottom: 18px;
-      }
-      line-height: 30px;
-      font-size: 22px;
-    }
-  }
-
-  .read-more-btn {
-    position: relative;
-    font-weight: 500;
-    color: $template-color;
-
-    &:hover {
-      color: $pink-color;
-      letter-spacing: 1px;
-    }
-  }
-
-  &:hover {
-    .blog-image {
-      a {
-        img {
-          transform: scale(1.1);
-        }
-      }
-
-      .post-tag {
-        top: 70px;
-
-        a {
-          background: $pink-color;
-          color: $white-color;
-        }
-      }
-    }
-  }
-
-  &.without-thumbnail {
-    box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.06);
-
-    .blog-post-content {
-      p {
-        margin: {
-          bottom: 20px;
-          top: -5px;
-        }
-      }
-    }
-  }
-
-  &.with-video {
-    .blog-video {
-      iframe {
-        width: 100%;
-        height: 195px;
-        border: none;
-      }
-    }
-  }
-}
-
-/*================================================
-Our Partner CSS
-=================================================*/
-.partner-area {
-  .partner-item {
-    text-align: center;
-
-    a {
-      position: relative;
-      display: block;
-
-      img {
-        width: unset !important;
-        display: inline-block !important;
-
-        &:last-child {
-          position: absolute;
-          left: 0;
-          top: 30px;
-          right: 0;
-          margin: 0 auto;
-          opacity: 0;
-          visibility: hidden;
-          transition: $transition;
-        }
-      }
-    }
-
-    &:hover {
-      a {
-        img {
-          &:last-child {
-            opacity: 1;
-            visibility: visible;
-            top: 0;
-          }
-        }
-      }
-    }
-  }
-}
 
 /*================================================
 Contact CTA CSS
@@ -3507,245 +2602,9 @@ Sidebar CSS
 }
 
 /*================================================
-Blog Details CSS
-=================================================*/
-.blog-details-area {
-  position: relative;
-
-  .blog-details {
-    box-shadow: 0px 0px 29px 0px rgba(102, 102, 102, 0.1);
-    background: $white-color;
-
-    .article-img {
-      position: relative;
-
-      img {
-        width: 100%;
-      }
-
-      .date {
-        position: absolute;
-        bottom: 15px;
-        width: 80px;
-        left: 15px;
-        height: 90px;
-        text-align: center;
-        font: {
-          size: 22px;
-          style: italic;
-        }
-        background: $template-color;
-        color: $white-color;
-        border-radius: 5px;
-        padding-top: 15px;
-        line-height: 30px;
-      }
-    }
-
-    .article-content {
-      padding: 30px;
-
-      ul {
-        li {
-          display: inline-block;
-        }
-
-        &.category {
-          li {
-            margin-right: 4px;
-
-            a {
-              background: $template-color;
-              color: $white-color;
-              padding: 5px 15px 3px;
-              display: inline-block;
-              border-radius: 3px;
-            }
-          }
-
-          margin-bottom: 30px;
-        }
-      }
-
-      h3 {
-        font: {
-          size: 22px;
-        }
-        margin-bottom: -2px;
-        line-height: 30px;
-      }
-
-      p {
-        margin: {
-          bottom: 0;
-          top: 20px;
-        }
-      }
-
-      .blockquote {
-        margin: {
-          bottom: 20px;
-          top: 20px;
-        }
-        background: $bg-gray;
-        padding: 30px;
-        border-left: 4px solid $template-color;
-
-        p {
-          margin-top: 0;
-          font-size: 18px;
-        }
-      }
-
-      .share-post {
-        text-align: center;
-        margin-top: 30px;
-
-        ul {
-          li {
-            margin: 0 2px;
-
-            a {
-              width: 40px;
-              font-size: 15px;
-              height: 40px;
-              display: inline-block;
-              line-height: 38px;
-              border: 1px solid #eeeeee;
-              border-radius: 50%;
-              color: #555555;
-
-              &:hover, &:focus {
-                color: $white-color;
-                border-color: $template-color;
-                background-color: $template-color;
-              }
-            }
-          }
-        }
-      }
-
-      ul {
-        padding: 0;
-        margin: 0;
-        list-style-type: none;
-      }
-    }
-  }
-
-  .post-controls-buttons {
-    overflow: hidden;
-    margin: {
-      top: 25px;
-      bottom: 25px;
-    }
-    background: $white-color;;
-    padding: 30px;
-    box-shadow: 0 5px 10px rgba(0, 9, 128, 0.035), 0 7px 18px rgba(0, 9, 128, 0.05);
-
-    .controls-left {
-      float: left;
-    }
-
-    .controls-right {
-      float: right;
-    }
-
-    div {
-      a {
-        border: 1px solid #eeeeee;
-        padding: 8px 20px;
-        display: inline-block;
-        border-radius: 5px;
-        font-weight: 500;
-
-        &:hover, &:focus {
-          color: $white-color;
-          background: $template-color;
-          border-color: $template-color;
-        }
-      }
-    }
-  }
-
-  .post-comments {
-    padding: 30px;
-    background: $white-color;
-    box-shadow: 0 5px 10px rgba(0, 9, 128, 0.035), 0 7px 18px rgba(0, 9, 128, 0.05);
-
-    h3 {
-      font: {
-        size: 22px;
-      }
-      margin-bottom: 5px;
-    }
-
-    .single-comment {
-      position: relative;
-      padding-left: 95px;
-      margin-top: 30px;
-
-      .comment-img {
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 75px;
-        height: 75px;
-
-        img {
-          border-radius: 50%;
-        }
-      }
-
-      .comment-content {
-        h4 {
-          font: {
-            size: 16px;
-          }
-          margin-bottom: 10px;
-        }
-
-        span {
-          color: $paragraph-color;
-          font-size: 14px;
-        }
-
-        p {
-          margin-bottom: 15px;
-        }
-
-        a {
-          position: absolute;
-          right: 0;
-          bottom: 0;
-        }
-      }
-
-      &.left-m {
-        margin-left: 85px;
-      }
-    }
-  }
-
-  .leave-a-reply {
-    padding: 30px;
-    background: $white-color;
-    box-shadow: 0 5px 10px rgba(0, 9, 128, 0.035), 0 7px 18px rgba(0, 9, 128, 0.05);
-    margin-top: 25px;
-
-    h3 {
-      font: {
-        size: 22px;
-      }
-      margin-bottom: 30px;
-    }
-  }
-}
-
-/*================================================
 Shop CSS
 =================================================*/
-.woocommerce-topbar {
+.shop-topbar {
   margin-bottom: 30px;
 }
 
@@ -3764,6 +2623,7 @@ Shop CSS
     img {
       transition: $transition;
       width: 100%;
+      max-height: 550px;
     }
   }
 
@@ -3844,7 +2704,7 @@ Product Details CSS
       }
       margin: 16px 0;
 
-      span {
+      span, del {
         color: $paragraph-color;
         text-decoration: line-through;
         margin-right: 5px;
@@ -4189,10 +3049,8 @@ Cart CSS
 .cart-totals {
   background: $white-color;
   padding: 40px;
-  max-width: 600px;
   box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
   border-radius: 5px;
-  margin-left: auto;
 
   h3 {
     font: {
@@ -4588,228 +3446,6 @@ Portfolio Details CSS
   }
 }
 
-/*================================================
-Team Details CSS
-=================================================*/
-.team-details-info {
-  h3 {
-    font-size: 22px;
-    margin-bottom: 15px;
-  }
-
-  p {
-    margin: 0;
-  }
-
-  .personal-information {
-    margin-top: 20px;
-
-    h3 {
-      font-size: 16px;
-      margin-bottom: 10px;
-    }
-
-    ul {
-      margin: 20px 0 0;
-      padding: 0;
-      list-style-type: none;
-
-      li {
-        margin-bottom: 8px;
-        font-size: 15px;
-        color: $paragraph-color;
-
-        span {
-          a {
-            color: $paragraph-color;
-
-            &:hover {
-              color: $template-color;
-            }
-          }
-        }
-
-        &:last-child {
-          margin-bottom: 0;
-        }
-      }
-    }
-  }
-}
-
-.overview-desc {
-  margin-top: 30px;
-
-  h3 {
-    font-size: 22px;
-    margin-bottom: 15px;
-  }
-
-  .skills {
-    position: relative;
-
-    .skill-item {
-      position: relative;
-      margin-bottom: 25px;
-
-      .skill-header {
-        position: relative;
-        margin-bottom: 10px;
-
-        .skill-title {
-          font-size: 17px;
-          margin-bottom: 0;
-        }
-
-        .skill-percentage {
-          position: absolute;
-          right: 0;
-          top: 4px;
-          font: {
-            size: 16px;
-            weight: 300;
-            family: $font-family;
-          }
-          color: $paragraph-color;
-        }
-      }
-
-      &:last-child {
-        margin-bottom: 0;
-      }
-
-      .skill-bar {
-        position: relative;
-        width: 100%;
-
-        .bar-inner {
-          position: relative;
-          width: 100%;
-          border-bottom: 7px solid #d5d5d5;
-          border-radius: 30px;
-
-          .bar {
-            position: absolute;
-            left: 0px;
-            top: 0px;
-            width: 0px;
-            height: 7px;
-            background: $template-color;
-            transition: all 2000ms ease;
-            border-radius: 30px;
-          }
-        }
-      }
-    }
-  }
-}
-
-/*================================================
-Login CSS
-=================================================*/
-.login-form {
-  background: $white-color;
-  box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
-  padding: 40px;
-  border-radius: 5px;
-
-  h3 {
-    font: {
-      size: 22px;
-    }
-    margin-bottom: 8px;
-  }
-
-  p {
-    margin-bottom: 30px;
-  }
-
-  form {
-    .form-check {
-      margin-top: 18px;
-
-      .form-check-label {
-        color: $paragraph-color;
-        position: relative;
-        top: -2px;
-      }
-    }
-
-    .forgot-password {
-      margin: {
-        bottom: 20px;
-        top: 11px;
-      }
-
-      a {
-        color: $paragraph-color;
-
-        &:hover {
-          color: $template-color;
-        }
-      }
-    }
-
-    .btn {
-      margin: {
-        bottom: 20px;
-        top: 10px;
-      }
-    }
-
-    span {
-      display: block;
-      color: $paragraph-color;
-
-      a {
-        color: $template-color;
-      }
-    }
-  }
-}
-
-/*================================================
-Signup CSS
-=================================================*/
-.signup-form {
-  background: $white-color;
-  box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
-  padding: 40px;
-  border-radius: 5px;
-
-  h3 {
-    font: {
-      size: 22px;
-    }
-    margin-bottom: 25px;
-  }
-
-  form {
-    .form-check {
-      margin-top: 10px;
-
-      .form-check-label {
-        color: $paragraph-color;
-      }
-    }
-
-    .btn {
-      margin: {
-        bottom: 20px;
-        top: 20px;
-      }
-    }
-
-    span {
-      display: block;
-      color: $paragraph-color;
-
-      a {
-        color: $template-color;
-      }
-    }
-  }
-}
 
 /*================================================
 FAQ CSS
@@ -4884,129 +3520,6 @@ FAQ CSS
   form {
     .btn {
       margin-top: 15px;
-    }
-  }
-}
-
-/*================================================
-Coming Soon CSS
-=================================================*/
-.coming-soon {
-  position: relative;
-  z-index: 1;
-  background: {
-    image: url(../images/coming-soon-banner.jpg);
-    position: center center;
-    size: cover;
-    attachment: fixed;
-    repeat: no-repeat;
-  }
-  height: 100vh;
-  text-align: center;
-  overflow: hidden;
-
-  &::before {
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    background: $black-color;
-    opacity: .90;
-    content: '';
-    position: absolute;
-  }
-
-  .coming-soon-content {
-    max-width: 650px;
-    margin: 0 auto;
-
-    h1 {
-      color: $white-color;
-      font: {
-        size: 45px;
-        weight: 700;
-      }
-      text-transform: uppercase;
-      margin-bottom: 0;
-      line-height: 55px;
-    }
-
-    p {
-      color: #c7c3c7;
-      margin: {
-        top: 20px;
-        bottom: 35px;
-      }
-    }
-
-    form {
-      position: relative;
-
-      .form-control {
-        background: transparent;
-        border: 1px solid $white-color;
-        border-radius: 50px;
-        color: $white-color;
-        padding-left: 15px;
-        height: 55px;
-
-        &:focus {
-          border-color: $template-color;
-        }
-
-        &::placeholder {
-          color: $white-color;
-        }
-      }
-
-      button {
-        position: absolute;
-        right: 0;
-        height: 100%;
-        background: $template-color;
-        top: 0;
-        color: $white_color;
-        border: none;
-        width: 130px;
-        font-weight: 500;
-        cursor: pointer;
-        text-transform: uppercase;
-        border-radius: 0 50px 50px 0;
-        transition: $transition;
-
-        &:hover {
-          background: $pink-color;
-        }
-      }
-    }
-
-    #timer {
-      margin-bottom: 35px;
-
-      div {
-        display: inline-block;
-        font: {
-          size: 45px;
-          weight: 600;
-        }
-        color: $white-color;
-        width: 135px;
-        height: 135px;
-        border: 1px solid #eeeeee;
-        border-radius: 50%;
-        padding-top: 34px;
-        line-height: 40px;
-        margin: 0 5px;
-      }
-
-      span {
-        display: block;
-        font: {
-          size: 17px;
-          weight: 400;
-        }
-      }
     }
   }
 }
@@ -5250,47 +3763,5 @@ Footer CSS
         color: $pink-color;
       }
     }
-  }
-}
-
-/*================================================
-Go Top CSS
-=================================================*/
-.go-top {
-  position: fixed;
-  cursor: pointer;
-  bottom: 15px;
-  right: 15px;
-  font-size: 25px;
-  color: $white-color;
-  background-color: $template-color;
-  z-index: 4;
-  // display: none;
-  width: 50px;
-  text-align: center;
-  height: 50px;
-  line-height: 50px;
-  border-radius: 50%;
-  transition: $transition;
-
-  &:hover {
-    color: $white-color;
-    background: $pink-color;
-  }
-}
-
-.modal {
-  background: #0000004f;
-}
-
-.thank-you-area {
-  text-align: center;
-  padding: {
-    top: 150px;
-    bottom: 150px;
-  }
-
-  h1 {
-    margin-bottom: 15px;
   }
 }

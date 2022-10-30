@@ -29,12 +29,12 @@ class CartContent extends Component {
         </td>
 
         <td className="product-price">
-          <span className="unit-amount">${data.price}</span>
+          <span className="unit-amount">{data.price}zł</span>
         </td>
 
         <td className="product-remove">
           <Link to="#">
-            <i className="icofont-ui-delete"/>
+            <i className="icofont-ui-delete" onClick={() => this.handleRemove(data.id)}/>
           </Link>
         </td>
       </tr>);
@@ -52,13 +52,12 @@ class CartContent extends Component {
                 <table className="table table-bordered">
                   <thead>
                   <tr>
-                    <th scope="col">Product</th>
+                    <th scope="col">Painting</th>
                     <th scope="col">Name</th>
-                    <th scope="col">Unit Price</th>
-                    <th scope="col">Remove</th>
+                    <th scope="col">Price</th>
+                    <th scope="col"></th>
                   </tr>
                   </thead>
-
                   <tbody>
                   {cartItems}
                   </tbody>
@@ -67,14 +66,14 @@ class CartContent extends Component {
 
               <div className="cart-buttons">
                 <div className="row h-100">
-                  <div className="col-lg-5 col-md-5">
+                  <div className="col-lg-5 col-md-12">
                     <div className="cart-totals">
                       <h3>Cart Totals</h3>
                       <ul>
-                        <li>Total: <span>${this.props.total}</span></li>
+                        <li>Total: <span>{this.props.total}zł</span></li>
                       </ul>
-                      <Link to="/checkout">
-                        <a className="btn btn-primary">Proceed to Checkout</a>
+                      <Link to="/checkout" className="btn btn-primary">
+                        Proceed to Checkout
                       </Link>
                     </div>
                   </div>

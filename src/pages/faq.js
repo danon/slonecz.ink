@@ -14,9 +14,7 @@ export default function Faq() {
         <h1>FAQ</h1>
         <ul>
           <li>
-            <Link to="/">
-              <a>Home</a>
-            </Link>
+            <Link to="/">Home</Link>
           </li>
           <li>FAQ</li>
         </ul>
@@ -34,11 +32,12 @@ export default function Faq() {
                 </AccordionItemButton>
               </AccordionItemHeading>
               <AccordionItemPanel>
-                <p className="accordion-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                  aliqua.
-                  incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                  et dolore
-                  magna aliqua. incididunt ut labore et dolore magna aliqua.</p>
+                <p className="accordion-content">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                  ut labore et dolore magna aliqua. incididunt ut labore et dolore magna aliqua. Lorem ipsum
+                  dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna aliqua. incididunt ut labore et dolore magna aliqua.
+                </p>
               </AccordionItemPanel>
             </AccordionItem>
 
@@ -49,11 +48,12 @@ export default function Faq() {
                 </AccordionItemButton>
               </AccordionItemHeading>
               <AccordionItemPanel>
-                <p className="accordion-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                  aliqua.
-                  incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                  et dolore
-                  magna aliqua. incididunt ut labore et dolore magna aliqua.</p>
+                <p className="accordion-content">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                  ut labore et dolore magna aliqua. incididunt ut labore et dolore magna aliqua. Lorem ipsum
+                  dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna aliqua. incididunt ut labore et dolore magna aliqua.
+                </p>
               </AccordionItemPanel>
             </AccordionItem>
 
@@ -64,14 +64,14 @@ export default function Faq() {
                 </AccordionItemButton>
               </AccordionItemHeading>
               <AccordionItemPanel>
-                <p className="accordion-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                  aliqua.
-                  incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                  et dolore
-                  magna aliqua. incididunt ut labore et dolore magna aliqua.</p>
+                <p className="accordion-content">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                  labore et dolore magna aliqua. incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor
+                  sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                  magna aliqua. incididunt ut labore et dolore magna aliqua.
+                </p>
               </AccordionItemPanel>
             </AccordionItem>
-
             <AccordionItem uuid="d">
               <AccordionItemHeading>
                 <AccordionItemButton>
@@ -79,11 +79,12 @@ export default function Faq() {
                 </AccordionItemButton>
               </AccordionItemHeading>
               <AccordionItemPanel>
-                <p className="accordion-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                  aliqua.
-                  incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                  et dolore
-                  magna aliqua. incididunt ut labore et dolore magna aliqua.</p>
+                <p className="accordion-content">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                  labore et dolore magna aliqua. incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor
+                  sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                  magna aliqua. incididunt ut labore et dolore magna aliqua.
+                </p>
               </AccordionItemPanel>
             </AccordionItem>
 
@@ -94,11 +95,12 @@ export default function Faq() {
                 </AccordionItemButton>
               </AccordionItemHeading>
               <AccordionItemPanel>
-                <p className="accordion-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                  aliqua.
-                  incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                  et dolore
-                  magna aliqua. incididunt ut labore et dolore magna aliqua.</p>
+                <p className="accordion-content">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                  labore et dolore magna aliqua. incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor
+                  sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                  magna aliqua. incididunt ut labore et dolore magna aliqua.
+                </p>
               </AccordionItemPanel>
             </AccordionItem>
 
@@ -147,12 +149,6 @@ export default function Faq() {
               <div className="col-lg-6 col-md-6">
                 <div className="form-group">
                   <input type="email" placeholder="Email" className="form-control"/>
-                </div>
-              </div>
-
-              <div className="col-lg-12 col-md-12">
-                <div className="form-group">
-                  <input type="text" placeholder="Subject" className="form-control"/>
                 </div>
               </div>
 
